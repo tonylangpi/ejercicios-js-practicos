@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7 promedio 4 calificaciones</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div>
+        <h2>PROMEDIO DE NOTAS</h2>
+        <h3>Ingreso de 4 calificaciones</h3>
+        <!--formulario para pedir las notas -->
+        <form id="evaluar">
+          <div>
+            <label for="x">Calificación </label>
+            <input type="number"  id="nota" required/>
+            
+            <input type="submit" value="ingresar"  />
+            <button onclick="resetTable()">limpiar</button>
+          </div>
+        </form>
+        <button onclick="calcPromedio()">Calcular Promedios</button>
+        <p id="mensaje"></p>
+        <div id="result-container">
+          <table id="customers">
+            <tr>
+              <th>Notas Ingresadas</th>
+            </tr>
+          </table>
+          
+        <p id="estado"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6 pizzas contador</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div class="card" onclick="abrirModal()">
+        <img src="https://www.pizzahut.com.gt/static/media/images/products/webp/CMB_10884_MD_22-03-2023-15-01.webp?2.0.11" alt="Avatar" >
+        <div class="container">
+          <h4><b>Pan Pizza 4 Estaciones</b></h4> 
+          <p>Q.55</p> 
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div>
+            <img src="https://www.pizzahut.com.gt/static/media/images/products/webp/CMB_10884_MD_22-03-2023-15-01.webp?2.0.11" alt="Avatar" >
+          </div>
+          <div class="pizza-content">
+            <h2>Pan Pizza 4 Estaciones</h2>
+            <div class="orden-numero">
+               <button id="button-plus" >+</button>
+               <p id="cantidad-pizzas"></p>
+               <button id="button-minus">-</button>
+            </div>
+          </div>
+          <span class="close">&times;</span>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

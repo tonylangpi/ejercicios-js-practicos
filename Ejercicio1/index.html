@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1 operaciones</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <img src="img/image.jpg" />
+      <div>
+        <h2>Evaluar Expresiones</h2>
+        <h3>Selecciona la expresion a calcular</h3>
+        <select id="elegir" onchange="mostrarForm()">
+          <option value="z">--------------</option>
+          <option value="a">a) 3/2 + 4/3</option>
+          <option value="b">b) 1/(x-5) - 3*x*y/4</option>
+          <option value="c">c) a*a/(b-c) + (d-e)/(f-g*h/j)</option>
+          <option value="d">d) m/n + p</option>
+          <option value="e">e) (m+n/p)/(q-r/s)</option>
+          <option value="f">f) (3*a+b)/(c-(d+5*e)/(f+g/(2*h)))</option>
+        </select>
+        <br />
+        <!--esto es para la A-->
+        <label id="a"></label>
+        <!--esto es para la B-->
+        <form id="valor1">
+          <div id="expresion-b" style="display: none">
+            <label for="x">x:</label>
+            <input type="number" step="any" id="x" /><br />
+
+            <label for="y">y:</label>
+            <input type="number" step="any" id="y" /><br />
+            <input type="submit" value="Calcular" />
+          </div>
+        </form>
+
+        <!--esto es para la C-->
+        <form id="valor2">
+          <div id="espacio-c" style="display: none">
+            <label for="a-c">a:</label>
+            <input type="number" step="any" id="a-c" /><br />
+
+            <label for="b-c">b:</label>
+            <input type="number" step="any" id="b-c" /><br />
+
+            <label for="c-c">c:</label>
+            <input type="number" step="any" id="c-c" /><br />
+
+            <label for="d-c">d:</label>
+            <input type="number" step="any" id="d-c" /><br />
+
+            <label for="e-c">e:</label>
+            <input type="number" step="any" id="e-c" /><br />
+
+            <label for="f-c">f:</label>
+            <input type="number" step="any" id="f-c" /><br />
+
+            <label for="g-c">g:</label>
+            <input type="number" step="any" id="g-c" /><br />
+
+            <label for="h-c">h:</label>
+            <input type="number" step="any" id="h-c" /><br />
+
+            <label for="j-c">j:</label>
+            <input type="number" step="any" id="j-c" /><br />
+
+            <input type="submit" value="Calcular" />
+          </div>
+        </form>
+
+        <!--esto es para la d-->
+        <form id="valor3">
+          <div id="espacio-d" style="display: none">
+            <label for="m-d">m:</label>
+            <input type="number" step="any" id="m-d" /><br />
+
+            <label for="n-d">n:</label>
+            <input type="number" step="any" id="n-d" /><br />
+
+            <label for="p-d">p:</label>
+            <input type="number" step="any" id="p-d" /><br />
+
+            <input type="submit" value="Calcular" />
+          </div>
+        </form>
+
+        <!--esto es para la e-->
+        <form id="valor4">
+          <div id="espacio-e" style="display: none">
+            <label for="m-e">m:</label>
+            <input type="number" step="any" id="m-e" /><br />
+
+            <label for="n-e">n:</label>
+            <input type="number" step="any" id="n-e" /><br />
+
+            <label for="p-e">p:</label>
+            <input type="number" step="any" id="p-e" /><br />
+
+            <label for="q-e">q:</label>
+            <input type="number" step="any" id="q-e" /><br />
+
+            <label for="r-e">r:</label>
+            <input type="number" step="any" id="r-e" /><br />
+
+            <label for="s-e">s:</label>
+            <input type="number" step="any" id="s-e" /><br />
+
+            <input type="submit" value="Calcular" />
+          </div>
+        </form>
+
+        <!--esto es para la f-->
+        <form id="valor5">
+          <div id="espacio-f" style="display: none">
+            <label for="a-f">a:</label>
+            <input type="number" step="any" id="a-f" /><br />
+
+            <label for="b-f">b:</label>
+            <input type="number" step="any" id="b-f" /><br />
+
+            <label for="c-f">c:</label>
+            <input type="number" step="any" id="c-f" /><br />
+
+            <label for="d-f">d:</label>
+            <input type="number" step="any" id="d-f" /><br />
+
+            <label for="e-f">s:</label>
+            <input type="number" step="any" id="e-f" /><br />
+
+            <label for="f-f">f:</label>
+            <input type="number" step="any" id="f-f" /><br />
+
+            <label for="g-f">g:</label>
+            <input type="number" step="any" id="g-f" /><br />
+
+            <label for="h-f">h:</label>
+            <input type="number" step="any" id="h-f" /><br />
+
+            <input type="submit" value="Calcular" />
+          </div>
+        </form>
+
+        <div id="result-container">
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

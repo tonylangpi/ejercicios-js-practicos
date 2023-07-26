@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 Mayor, menor igual</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <img src="img/image.jpg" />
+      <div>
+        <h2>Mayor,menor o igual en numeros</h2>
+        <h3>Ingresa dos números</h3>
+        <!--formulario para pedir los numeros -->
+        <form id="evaluar">
+          <div>
+            <label for="x">Numero 1: </label>
+            <input type="number" step="any" id="n1" /><br />
+
+            <label for="y">Numero 2:</label>
+            <input type="number" step="any" id="n2" /><br />
+            <input type="submit" value="Evaluar" />
+            <button onclick="limpiar()">limpiar</button>
+          </div>
+        </form>
+        <div id="result-container">
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
